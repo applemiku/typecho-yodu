@@ -61,7 +61,7 @@ if($('#header').hasClass('up')){$('#header').removeClass('up');$('#header').addC
 
 window.onresize = function(){
  $('#sidebar').removeClass('menus');
- $('#header').removeClass('menu'); $('#bug').removeClass('right');
+ $('#header').removeClass('menu'); $('#bug').removeClass('bugright');
  $('#zhezhao').removeClass('zhezhao');
 }
 
