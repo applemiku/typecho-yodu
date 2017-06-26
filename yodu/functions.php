@@ -157,6 +157,7 @@ array_push($views, $cid);
 
 function themeInit($archive)
 {
+Helper::options()->commentsMaxNestingLevels = 999;
     if ($archive->is('author')) {
        $archive->parameter->pageSize = 50; // 自定义条数
 }
