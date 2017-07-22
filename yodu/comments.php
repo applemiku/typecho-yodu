@@ -38,7 +38,7 @@ echo $commentClass;
             $email = strtolower($comments->mail);
            $sjtx = Typecho_Widget::widget('Widget_Options')->motx;
 $qq=str_replace('@qq.com','',$email);
-if(strstr($email,"qq.com") && is_numeric($qq))
+if(strstr($email,"qq.com") && is_numeric($qq) && strlen($qq) < 11 && strlen($qq) > 4)
 {
 $avatar = '//q.qlogo.cn/g?b=qq&nk='.$qq.'&s=100';
  
