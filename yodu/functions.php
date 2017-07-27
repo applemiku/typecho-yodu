@@ -1,7 +1,7 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 define("Yodu_name", "Yodu");
-define("Yodu_Version", "1.2");
+define("Yodu_Version", "1.3");
 function themeConfig($form) { 
 
 
