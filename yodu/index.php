@@ -4,14 +4,14 @@
  * 
  * @package Yodu
  * @author Jrotty
- * @version 极简版
+ * @version 极简版1.3
  * @link http://qqdie.com
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 ?>
   <?php $this->need('header.php'); ?> <?php $this->need('sidebar.php');?>
 
-<?php if(!$this->is('index')): ?>
+<?php if(!$this->is('index') && !$this->is('front')): ?>
 <h1 class="intro" id="intro"><?php $this->archiveTitle(array(
 'category'=>_t('分类 %s 下的文章'),
 'search'=>_t('包含关键字 %s 的文章'),
