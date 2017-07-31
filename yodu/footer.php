@@ -6,7 +6,7 @@
 </footer>
 </div>
 
-<?php if($this->is('post')||$this->is('page', 'links')||$this->is('page', 'about')): ?>
+<?php if($this->is('post')||$this->is('page')&&!$this->is('page', 'archives')&&!$this->is('page', 'categories')&&!$this->is('page', 'tags')): ?>
 <div id="bottom-bar" class="bottom-post-bar ko" >
 <?php thePrev($this); ?>   <?php theNext($this); ?>
 <div class="page-right fenxiang bar-two" id="fenxiang">
